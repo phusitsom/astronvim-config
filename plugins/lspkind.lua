@@ -2,9 +2,9 @@ return function(config)
   config.preset = "codicons"
   config.symbol_map = {
     Text = " ",
-    Method = " ",
+    Method = "m ",
     Function = " ",
-    Constructor = " ",
+    Constructor = " ",
     Field = " ",
     Variable = " ",
     Class = " ",
