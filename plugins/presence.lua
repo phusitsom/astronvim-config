@@ -1,0 +1,20 @@
+require("presence"):setup {
+  auto_update = true,
+  neovim_image_text = "what",
+  main_image = "file",
+  log_level = nil,
+  debounce_timeout = 10,
+  enable_line_number = false,
+  blacklist = {},
+  buttons = true,
+  file_assets = {},
+  show_time = false,
+
+  editing_text = "Destroying %s",
+  file_explorer_text = "Peeking %s",
+  git_commit_text = "Committing holocaust",
+  plugin_manager_text = "The hell",
+  reading_text = "Peeping %s",
+  workspace_text = "Puking on %s",
+  line_number_text = "Line %s out of %s",
+}
