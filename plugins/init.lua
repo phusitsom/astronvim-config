@@ -5,13 +5,7 @@ return {
 
   --MOVEMENT
   ["ggandor/leap.nvim"] = {
-    -- disable = false,
-    keys = { "<leader>j", "<leader>J" },
-    module = "leap",
     config = function() require "user.plugins.leap" end,
-    requires = {
-      "tpope/vim-repeat",
-    },
   },
 
   --UTILS
@@ -71,16 +65,22 @@ return {
     after = "mason-lspconfig.nvim",
     config = function()
       local rt = require "rust-tools"
+      local server_settings = astronvim.lsp.server_settings "rust_analyzer"
+
+      server_settings.standalone = true
 
       rt.setup {
-        lsp = astronvim.lsp.server_settings "rust_analyzer", -- get the server settings and built in capabilities/on_attach
+        server = server_settings,
+        tools = {
+          inlay_hints = {
+            parameter_hints_prefix = "<- ",
+            other_hints_prefix = "=> ",
+          },
+        },
       }
-
-      rt.inlay_hints.enable()
     end,
   },
   ["saecki/crates.nvim"] = {
-
     event = { "BufRead Cargo.toml" },
     requires = { "plenary.nvim" },
     config = function()
