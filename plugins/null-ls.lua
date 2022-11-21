@@ -12,8 +12,6 @@ return function(config)
       args = { "-i", "2" },
     },
     null_ls.builtins.diagnostics.luacheck,
-    null_ls.builtins.diagnostics.flake8,
-    -- null_ls.builtins.diagnostics.pylint,
     null_ls.builtins.diagnostics.mypy,
   }
   return config
