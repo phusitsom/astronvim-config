@@ -15,6 +15,11 @@ return {
   },
 
   --UTILS
+  --outline
+  ["simrat39/symbols-outline.nvim"] = {
+    cmd = "SymbolsOutline",
+    config = function() require("symbols-outline").setup {} end,
+  },
   --treesitter
   ["nvim-treesitter/playground"] = {
     cmd = "TSHighlightCapturesUnderCursor",
@@ -72,6 +77,20 @@ return {
       }
 
       rt.inlay_hints.enable()
+    end,
+  },
+  ["saecki/crates.nvim"] = {
+
+    event = { "BufRead Cargo.toml" },
+    requires = { "plenary.nvim" },
+    config = function()
+      require("crates").setup {
+        null_ls = {
+          enabled = true,
+          name = "Crates",
+        },
+      }
+      astronvim.add_user_cmp_source "crates"
     end,
   },
   --typescript
