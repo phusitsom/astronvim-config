@@ -14,11 +14,6 @@ return {
     },
   },
 
-  --NOTIFICATION
-  ["rcarriga/nvim-notify"] = {
-    config = function() require("notify").setup { background_colour = "#000000" } end,
-  },
-
   --UTILS
   --treesitter
   ["nvim-treesitter/playground"] = {
@@ -32,8 +27,13 @@ return {
   },
 
   --MISC
+  --discord rich presence
   ["andweeb/presence.nvim"] = {
     config = function() require "user.plugins.presence" end,
+  },
+  --notification
+  ["rcarriga/nvim-notify"] = {
+    config = function() require("notify").setup { background_colour = "#000000" } end,
   },
 
   --LSP/CMP
