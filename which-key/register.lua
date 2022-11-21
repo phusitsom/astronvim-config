@@ -10,6 +10,7 @@ return {
       ["b"] = { name = "Buffer" },
       ["j"] = { name = "Jump forward" },
       ["J"] = { name = "Jump backward" },
+      ["T"] = { name = "Trouble" },
     },
   },
 }

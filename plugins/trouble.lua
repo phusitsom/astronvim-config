@@ -49,19 +49,19 @@ trouble.setup {
 }
 
 -- Lua
-vim.api.nvim_set_keymap("n", "<leader>aa", "<cmd>Trouble<cr>", { silent = true, noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>TT", "<cmd>Trouble<cr>", { silent = true, noremap = true })
 vim.api.nvim_set_keymap(
   "n",
-  "<leader>aw",
+  "<leader>Tw",
   "<cmd>Trouble lsp_workspace_diagnostics<cr>",
   { silent = true, noremap = true }
 )
 vim.api.nvim_set_keymap(
   "n",
-  "<leader>ad",
+  "<leader>Td",
   "<cmd>Trouble lsp_document_diagnostics<cr>",
   { silent = true, noremap = true }
 )
-vim.api.nvim_set_keymap("n", "<leader>al", "<cmd>Trouble loclist<cr>", { silent = true, noremap = true })
-vim.api.nvim_set_keymap("n", "<leader>aq", "<cmd>Trouble quickfix<cr>", { silent = true, noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>Tl", "<cmd>Trouble loclist<cr>", { silent = true, noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>Tq", "<cmd>Trouble quickfix<cr>", { silent = true, noremap = true })
 vim.api.nvim_set_keymap("n", "gR", "<cmd>Trouble lsp_references<cr>", { silent = true, noremap = true })
