@@ -18,6 +18,8 @@ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ```
 
 <h2>Screenshots</h2>
+The <a href="https://twitter.com/4sakana5/status/1428647164943605766">background</a></sup>
+ is not included in the config.
 
 <h3>Alpha</h3>
 
@@ -29,4 +31,5 @@ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 <img src="./assets/nvim_edit.png">
 
-
+<hr/>
+<sup>*1:
