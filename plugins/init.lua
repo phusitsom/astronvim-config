@@ -65,19 +65,20 @@ return {
   ["simrat39/rust-tools.nvim"] = {
     after = "mason-lspconfig.nvim",
     config = function()
-      local rt = require "rust-tools"
-      local server_settings = astronvim.lsp.server_settings "rust_analyzer"
-
-      server_settings.standalone = true
-
-      rt.setup {
-        server = server_settings,
+      require("rust-tools").setup {
         tools = {
+          autoSetHints = true,
+          hover_with_actions = true,
+          runnables = {
+            use_telescope = true,
+          },
           inlay_hints = {
+            show_parameter_hints = true,
             parameter_hints_prefix = "<- ",
             other_hints_prefix = "=> ",
           },
         },
+        server = astronvim.lsp.server_settings "rust-analyzer",
       }
     end,
   },
