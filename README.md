@@ -30,6 +30,3 @@ The <a href="https://twitter.com/4sakana5/status/1428647164943605766">background
 <h3>Editing</h3>
 
 <img src="./assets/nvim_edit.png">
-
-<hr/>
-<sup>*1:
