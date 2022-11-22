@@ -1,0 +1,32 @@
+<h2>Installation</h2>
+
+Before using my configuration, you must <a href="https://github.com/AstroNvim/AstroNvim#%EF%B8%8F-installation">install AstroNvim</a> first.
+
+After that, you could follow these steps.
+
+<h3>Clone this repository</h3>
+
+
+```bash
+git clone https://github.com/phusitsom/astronvim-config ~/.config/nvim/lua/user
+```
+
+<h3>Initialize AstroNvim</h3>
+
+```bash
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+```
+
+<h2>Screenshots</h2>
+
+<h2>Alpha</h2>
+
+<img src="./assets/nvim_dashboard.png">
+
+<br>
+
+<h2>Editing</h2>
+
+<img src="./assets/nvim_edit.png">
+
+
