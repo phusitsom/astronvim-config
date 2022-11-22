@@ -39,9 +39,12 @@ function M.config()
       cmp = true,
       gitsigns = true,
       nvimtree = true,
+      neotree = true,
+      treesitter = true,
       telescope = true,
-      notify = false,
-      mini = false,
+      notify = true,
+      leap = true,
+      which_key = true,
     },
   }
 end
