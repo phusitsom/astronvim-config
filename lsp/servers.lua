@@ -1,5 +1,5 @@
 return {
   "clangd",
-  "rust-analyzer",
+  "rust_analyzer",
   "tsserver",
 }

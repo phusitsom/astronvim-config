@@ -9,11 +9,6 @@ return {
   },
 
   --UTILS
-  --outline
-  ["simrat39/symbols-outline.nvim"] = {
-    cmd = "SymbolsOutline",
-    config = function() require("symbols-outline").setup {} end,
-  },
   --treesitter
   ["nvim-treesitter/playground"] = {
     cmd = "TSHighlightCapturesUnderCursor",
@@ -34,6 +29,8 @@ return {
   ["rcarriga/nvim-notify"] = {
     config = function() require("notify").setup { background_colour = "#000000" } end,
   },
+  --flash when jumping
+  ["danilamihailov/beacon.nvim"] = {},
 
   --LSP/CMP
   ["zbirenbaum/copilot.lua"] = {
@@ -66,19 +63,7 @@ return {
     after = "mason-lspconfig.nvim",
     config = function()
       require("rust-tools").setup {
-        tools = {
-          autoSetHints = true,
-          hover_with_actions = true,
-          runnables = {
-            use_telescope = true,
-          },
-          inlay_hints = {
-            show_parameter_hints = true,
-            parameter_hints_prefix = "<- ",
-            other_hints_prefix = "=> ",
-          },
-        },
-        server = astronvim.lsp.server_settings "rust-analyzer",
+        server = astronvim.lsp.server_settings "rust_analyzer",
       }
     end,
   },
