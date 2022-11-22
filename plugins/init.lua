@@ -5,7 +5,7 @@ return {
 
   --MOVEMENT
   ["ggandor/leap.nvim"] = {
-    config = function() require "user.plugins.leap" end,
+    config = function() require("leap").add_default_mappings() end,
   },
 
   --UTILS
@@ -53,6 +53,7 @@ return {
       }
     end,
   },
+
   ["folke/trouble.nvim"] = {
     cmd = { "Trouble", "TroubleToggle", "TroubleRefresh", "TroubleClose" },
     module = "trouble",
@@ -110,5 +111,12 @@ return {
         server = astronvim.lsp.server_settings "clangd",
       }
     end,
+  },
+
+  --markdown
+  ["iamcco/markdown-preview.nvim"] = {
+    run = "cd app && npm install",
+    setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
+    ft = { "markdown" },
   },
 }
