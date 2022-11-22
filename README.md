@@ -19,13 +19,13 @@ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 <h2>Screenshots</h2>
 
-<h2>Alpha</h2>
+<h3>Alpha</h3>
 
 <img src="./assets/nvim_dashboard.png">
 
 <br>
 
-<h2>Editing</h2>
+<h3>Editing</h3>
 
 <img src="./assets/nvim_edit.png">
 
