@@ -2,16 +2,16 @@
 return {
   automatic_installation = true,
   ensure_installed = {
-    "sumneko_lua",
-    "rust_analyzer",
-    "tsserver",
     "clangd",
     "cssls",
     "html",
-    "marksman",
     "jsonls",
+    "marksman",
     "pyright",
+    "rust_analyzer",
     "sqls",
+    "sumneko_lua",
+    "tsserver",
     "yamlls",
   },
 }

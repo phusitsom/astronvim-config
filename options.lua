@@ -8,6 +8,9 @@ return {
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = true, -- sets vim.opt.wrap
     conceallevel = 2, -- enable conceal
+    tabstop = 2, -- set tabstop to 2
+    shiftwidth = 2, -- set shiftwidth to 2
+    expandtab = true, -- set expandtab to true
     foldenable = false,
     foldexpr = "nvim_treesitter#foldexpr()", -- set Treesitter based folding
     foldmethod = "expr",

@@ -8,7 +8,7 @@ copilot.setup {
   },
   panel = {
     enabled = true,
-    auto_refresh = true,
+    auto_refresh = false,
     keymap = {
       jump_prev = "[[",
       jump_next = "]]",
@@ -20,7 +20,7 @@ copilot.setup {
 
   suggestion = {
     enabled = true,
-    auto_trigger = true,
+    auto_trigger = false,
     debounce = 75,
     keymap = {
       accept = "<M-l>",
@@ -43,5 +43,3 @@ copilot.setup {
     },
   },
 }
-
-require("copilot.suggestion").toggle_auto_trigger()
